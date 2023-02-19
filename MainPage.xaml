@@ -17,10 +17,10 @@
             <ComboBoxItem x:Name="Level3" Content="Level 3"/>
         </ComboBox>
         <TextBlock x:Name="SubjectlPick" Text="Pick Subject:" TextAlignment="Center" FontSize="80"  Margin="791,602,723,300" FontFamily="Monotype Corsiva" FocusVisualPrimaryBrush="{x:Null}"/>
-        <ComboBox x:Name="ComboSubject" FontFamily="Monotype Corsiva" FontWeight="Bold" Height="87" Width="408" FontSize="40" Margin="791,697,0,0">
+        <ComboBox x:Name="ComboSubject" FontFamily="Monotype Corsiva" FontWeight="Bold" Height="87" Width="408" FontSize="40" Margin="791,697,0,0" >
             <ComboBoxItem x:Name="Sub1" Content="Flags"/>
             <ComboBoxItem x:Name="Sub2" Content="Games"/>
         </ComboBox>
-        <Button Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="853,887,0,0" VerticalAlignment="Top" Height="81" Width="285"/>
+        <Button x:Name="start" Content="Start" FontFamily="Monotype Corsiva" FontSize="70" Background="Transparent" Margin="853,887,0,0" VerticalAlignment="Top" Height="81" Width="285" Click="Button_Click"/>
     </Grid>
 </Page>

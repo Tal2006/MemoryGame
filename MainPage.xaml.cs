@@ -26,5 +26,31 @@ namespace MemoryGame
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int subjectIndex = ComboSubject.SelectedIndex;
+            int levelIndex = ComboLevel.SelectedIndex;
+
+            if(subjectIndex != -1 && levelIndex != -1)
+            {
+                Level level;
+                if (levelIndex == 0)
+                    level = Level.lvl1;
+                else if (levelIndex == 1)
+                    level = Level.lvl2;
+                else
+                    level = Level.lvl3;
+
+                Subject subject;
+                if (subjectIndex == 0)
+                    subject = Subject.Flags;
+                else
+                    subject = Subject.Games;
+
+                Data data = new Data(subject, level);
+                Frame.Navigate(typeof(MemoGame), data);
+            }
+        }
     }
 }
